@@ -5,6 +5,13 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
+.header{
+    background: black !important;
+}
+
+.cards{
+   background: rgb(246, 246, 246);
+}
 
   
   

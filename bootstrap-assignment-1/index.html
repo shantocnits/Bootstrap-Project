@@ -27,42 +27,73 @@
   </head>
 
   <body>
-    <div class="container-fluid p-5 bg-primary text-white text-center">
-      <h1>My First Bootstrap Page</h1>
-      <p>Resize this responsive page to see the effect!</p> 
+    <!-- Header Start -->
+    <div class="container-fluid p-5  text-white text-center header">
+      <h1 class="display-1"> MY WEBSITE</h1>
+    </div>
+    <!-- Header End -->
+
+    <!-- Hero Start -->
+    <div class="hero-img">
+      <img src="./assets/img/bg.jpg" width="100%" height="400px" alt="">
     </div>
       
     <div class="container mt-5">
       <div class="row">
-        <div class="col-sm-4">
-          <h3>Column 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        <div class="col-md-4">
+          <div class="card p-3 mt-3">
+            <h3>Card</h3>
+          <p> <mark>Lorem</mark> ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
+            <p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p>
+          </p>
+          </div>
+          
         </div>
-        <div class="col-sm-4">
-          <h3>Column 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        <div class="col-md-4">
+          <div class="card p-3 mt-3">
+            <h3>Card</h3>
+          <p> <mark>Lorem</mark> ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
+            <p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p>
+          </p>
+          </div>
         </div>
-        <div class="col-sm-4">
-          <h3>Column 3</h3>        
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        <div class="col-md-4">
+          <div class="card p-3 mt-3">
+            <h3>Card</h3>
+          <p> <mark>Lorem</mark> ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
+            <p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p>
+          </p>
+          </div>
         </div>
       </div>
     </div>
 
 
+    <div class="container mt-3 text-center">
+      <h1>Columns</h1>
+      <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+      <div class="row">
+        <div class="col-sm-3 p-5 bg-dark text-white h4">Pabna</div>
+        <div class="col-sm-3 p-5 bg-dark text-white h4">Rajshahi</div>
+        <div class="col-sm-3 p-5 bg-dark text-white h4">Khulna</div>
+        <div class="col-sm-3 p-5 bg-dark text-white h4">Bogura</div>
+      </div>
+    </div>
 
+<!-- Table Start -->
     <div class="container mt-3">
-      <h2>Responsive Table</h2>
-      <p>The .table-responsive class adds a scrollbar to the table when needed:</p>
-      
+      <h2 class="text-center">Table</h2>   
       <div class="table-responsive">
-        <table class="table table-bordered">
-          <thead>
+        <div class=" container alert-warning">
+          <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+        </div>
+        <table class="table table-bordered table-hover">
+          <thead class="table-dark">
             <tr>
-              <th>#</th>
+              <th>NO</th>
               <th>Firstname</th>
               <th>Lastname</th>
               <th>Age</th>
@@ -84,12 +115,50 @@
           <tbody>
             <tr>
               <td>1</td>
-              <td>Anna</td>
-              <td>Pitt</td>
+              <td>shanto</td>
+              <td>shanto</td>
               <td>35</td>
-              <td>New York</td>
-              <td>USA</td>
-              <td>Female</td>
+              <td>Pabna</td>
+              <td>Bangladesh</td>
+              <td>Male</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>shanto</td>
+              <td>shanto</td>
+              <td>35</td>
+              <td>Pabna</td>
+              <td>Bangladesh</td>
+              <td>Male</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>shanto</td>
+              <td>shanto</td>
+              <td>35</td>
+              <td>Pabna</td>
+              <td>Bangladesh</td>
+              <td>Male</td>
               <td>Yes</td>
               <td>Yes</td>
               <td>Yes</td>
@@ -105,6 +174,7 @@
         </table>
       </div>
     </div>
+    <!-- Table End -->
 
     
 
