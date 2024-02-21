@@ -29,7 +29,6 @@
   <!-- Google Font -->
 
 </head>
-
 <body>
 
   <!-- Navbar Start -->
@@ -42,22 +41,32 @@
       <div class="collapse navbar-collapse" id="mynavbar">
         <ul class="navbar-nav m-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#offers">Offers</a>
+          <li class="nav-item dropdown navbar-white">
+            <a class="nav-link dropdown-toggle" href="#offers"  id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Offers</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="#">Bset Flights</a></li>
+              <li><a class="dropdown-item" href="#">Best Hotels</a></li>
+              <li><a class="dropdown-item" href="#">Fresh Food</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
+          <li class="nav-item ">
             <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#pakages">Pakages</a>
+            <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Contacts</a>
+          </li>
+          <li class="nav-item dropdown navbar-white">
+            <a class="nav-link dropdown-toggle" href="#review"  id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="#">Facebook</a></li>
+              <li><a class="dropdown-item" href="#">Whatsapp</a></li>
+              <li><a class="dropdown-item" href="#">Telegram</a></li>
+            </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#reviews">Reviews</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#reviews" tabindex="-1" aria-disabled="true">Reviews</a>
           </li>
         </ul>
         <form class="d-flex">
@@ -69,21 +78,70 @@
   <!-- Navbar End -->
 
 
-  <!-- Home Section Start -->
+  <!-- Hero Section Start -->
   <section class="home" id="home">
-    <div class="home-content">
-      <h4>Explore The World</h4>
-      <h1>With New <span>Vecation</span></h1>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque ipsum voluptate ducimus, praesentium hic fuga?
-      </p>
-      <button>Book Now</button>
-    </div>
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-    <div class="img">
-      <img src="./assets/img/hero-bg/hero-bg.png" alt="">
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
     </div>
-  </section>
-  <!-- Home Section End -->
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/img/hero slider/usa.jpg" alt="Los Angeles" class="d-block" style="width:100%" height="650px">
+        <div class="carousel-caption">
+          <div class="home-content">
+            <h3>Explore The World</h3>
+            <h1>With New <span>Vecation</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+            <button>Book Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/img/hero slider/italy.jpg" alt="Chicago" class="d-block" style="width:100%" height="650px">
+        <div class="carousel-caption">
+          <div class="home-content">
+            <h3>Explore The World</h3>
+            <h1>With New <span>Vecation</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+            <button>Book Now</button>
+          </div>
+        </div> 
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/img/hero slider/japan.jpg" alt="New York" class="d-block" style="width:100%" height="650px">
+        <div class="carousel-caption">
+          <div class="home-content">
+            <h3>Explore The World</h3>
+            <h1>With New <span>Vecation</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+            <button>Book Now</button>
+          </div>
+        </div>  
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+<!-- Hero Section End -->
+
+
+
 
 
 
@@ -92,28 +150,28 @@
 
     <h3>What We Offer</h3>
     <div class="row">
-      <div class="col-md-3 py-3 py-md-0">
+      <div class="col-md-3 py-3 py-md-0 offer">
         <div class="card">
           <i class="fa-solid fa-earth-americas"></i>
           <h5>B Places</h5>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, exercitationem!</p>
         </div>
       </div>
-      <div class="col-md-3 py-3 py-md-0">
+      <div class="col-md-3 py-3 py-md-0 offer">
         <div class="card">
           <i class="fa-solid fa-plane-departure"></i>
           <h5>Bset Flights</h5>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, exercitationem!</p>
         </div>
       </div>
-      <div class="col-md-3 py-3 py-md-0">
+      <div class="col-md-3 py-3 py-md-0 offer">
         <div class="card">
           <i class="fa-solid fa-hotel"></i>
           <h5>Best Hotels</h5>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, exercitationem!</p>
         </div>
       </div>
-      <div class="col-md-3 py-3 py-md-0">
+      <div class="col-md-3 py-3 py-md-0 offer">
         <div class="card">
           <i class="fa-solid fa-utensils"></i>
           <h5>Fresh Food</h5>
@@ -121,9 +179,72 @@
         </div>
       </div>
     </div>
-
   </section>
   <!-- Offer Section End -->
+
+
+
+
+
+  <!-- Place Article Start -->
+  <section id="place-article">
+    <div class="container pb-5">
+      <h2 class="text-center mb-4 pt-5">Read More...</h2>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseOne">
+              <span>Maldives:</span> <span><i class="fa-solid fa-chevron-down"></i></span>
+            </a>
+          </div>
+          <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+            <span>China:</span> <span><i class="fa-solid fa-chevron-down"></i></span>
+          </a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+              <span>Norway:</span><span><i class="fa-solid fa-chevron-down"></i></span>
+            </a>
+          </div>
+          <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
+              <span>Japan:</span><span><i class="fa-solid fa-chevron-down"></i></span>
+            </a>
+          </div>
+          <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Place Article End -->
+
+
 
 
 
@@ -167,6 +288,10 @@
           </div>
         </div>
       </div>
+      <button class="btn btn-info m-auto mt-4" style="width: 200px;">
+        <span class="spinner-border spinner-border-sm"></span>
+        Load More..
+      </button>
     </div>
   </section>
   <!-- Popular Destination End -->
@@ -189,13 +314,16 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil corrupti rem iure natus aspernatur obcaecati
           ipsa enim eos quia vero minus voluptatem, cupiditate commodi rerum vitae soluta temporibus quibusdam. Maxime.
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde minima, aliquam aut culpa quisquam corporis
-          dolorem deleniti sit? Quisquam, explicabo.</p>
+          dolorem deleniti sit? Quisquam, explicabo.
         </p>
+
         <button class="about-btn">Read More...</button>
+
       </div>
     </div>
   </section>
   <!-- About Section End -->
+
 
 
 
@@ -407,6 +535,10 @@
 
       <div class="col-md-7 py-3 py-md-0">
         <h2>Book Now</h2>
+        <div class="alert alert-danger alert-dismissible fade show">
+          <p type="button" class="btn-close" data-bs-dismiss="alert"></p>
+          <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+        </div>
         <form action="#">
           <div class="mb-3 mt-3">
             <input type="text" class="form-control" placeholder="Enter Name" required>
