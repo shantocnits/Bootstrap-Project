@@ -328,9 +328,15 @@ nav .wrapper {
   border-radius: 5px;
 }
 .nav-btn input {
-  border: none;
+  box-shadow: 0 0 0 !important;
+  outline: none !important;
+  border: none !important;
   background: transparent;
-  color: white !important;
+  color: rgb(0, 0, 0) !important;
+}
+.nav-btn .form-control {
+  outline: none !important;
+  border: none !important;
 }
 .nav-btn i {
   padding: 12px 0px 0px 8px;
